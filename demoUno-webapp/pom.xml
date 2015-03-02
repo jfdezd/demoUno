@@ -24,8 +24,23 @@
       <artifactId>magnolia-empty-webapp</artifactId>
       <type>war</type>
     </dependency>
+    <dependency>
+		<groupId>local.dev.proj</groupId>
+		<artifactId>myTemplateModule</artifactId>
+		<version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+		<groupId>local.dev.proj</groupId>
+		<artifactId>myTheme</artifactId>
+  		<version>1.0-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+		<groupId>info.magnolia</groupId>
+		<artifactId>magnolia-module-scheduler</artifactId>
+		<version>2.1.2</version>
+	</dependency>
   </dependencies>
-
+ 
   <build>
     <plugins>
       <plugin>

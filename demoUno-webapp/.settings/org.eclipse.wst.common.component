@@ -3,6 +3,12 @@
         <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="myTemplateModule-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/myTemplateModule/myTemplateModule">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="myTheme-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/myTheme/myTheme">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module deploy-path="/" handle="module:/overlay/var/M2_REPO/info/magnolia/magnolia-empty-webapp/5.3/magnolia-empty-webapp-5.3.war?unpackFolder=target/m2e-wtp/overlays&amp;includes=**/**&amp;excludes=WEB-INF/lib/*.jar">
             <dependency-type>consumes</dependency-type>
         </dependent-module>
