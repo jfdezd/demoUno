@@ -52,7 +52,6 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-
       <!-- If you want to use the Enterprise Edition, use info.magnolia.eebundle:magnolia-enterprise-bundle-parent.
       If you are using Maven 2, for the same reasons as above, you will have to keep the dependency to the CE bundle as well. If you are using Maven 3, just keep this one dependency below and remove the above 3.
       <dependency>

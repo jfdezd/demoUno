@@ -2,11 +2,11 @@
 <!DOCTYPE Repository PUBLIC "-//The Apache Software Foundation//DTD Jackrabbit 2.0//EN" "http://jackrabbit.apache.org/dtd/repository-2.0.dtd">
 <Repository>
   <DataSources>
-    <DataSource name="magnolia">
+    <DataSource name="magnoliatest">
       <param name="driver" value="com.mysql.jdbc.Driver" />
-      <param name="url" value="jdbc:mysql://localhost:3306/magnolia" />
-      <param name="user" value="root" />
-      <param name="password" value="password" />
+      <param name="url" value="jdbc:mysql://localhost:3306/magnoliatest" />
+      <param name="user" value="magnoliatest" />
+      <param name="password" value="magnoliatest" />
       <param name="databaseType" value="mysql"/>
       <param name="validationQuery" value="select 1"/>
     </DataSource>
@@ -32,7 +32,7 @@
       <param name="path" value="${wsp.home}/default" />
     </FileSystem>
     <PersistenceManager class="org.apache.jackrabbit.core.persistence.pool.MySqlPersistenceManager">
-      <param name="dataSourceName" value="magnolia"/>
+      <param name="dataSourceName" value="magnoliatest"/>
       <param name="schemaObjectPrefix" value="pm_${wsp.name}_" />
     </PersistenceManager>
     <SearchIndex class="org.apache.jackrabbit.core.query.lucene.SearchIndex">
@@ -65,7 +65,7 @@
       <param name="path" value="${rep.home}/workspaces/version" />
     </FileSystem>
     <PersistenceManager class="org.apache.jackrabbit.core.persistence.pool.MySqlPersistenceManager">
-      <param name="dataSourceName" value="magnolia"/>
+      <param name="dataSourceName" value="magnoliatest"/>
       <param name="schemaObjectPrefix" value="version_" />
     </PersistenceManager>
   </Versioning>
