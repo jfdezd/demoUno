@@ -8,7 +8,7 @@
   <packaging>pom</packaging>
 
   <properties>
-    <magnoliaVersion>5.3</magnoliaVersion>
+    <magnoliaVersion>5.3.6</magnoliaVersion>
     <javaVersion>1.7</javaVersion>
   </properties>
 
@@ -36,13 +36,13 @@
         <type>pom</type>
         <scope>import</scope>
       </dependency>
-      <dependency>
-        <groupId>info.magnolia.ui</groupId>
-        <artifactId>magnolia-ui-project</artifactId>
-        <version>${magnoliaVersion}</version>
-        <type>pom</type>
-        <scope>import</scope>
-      </dependency>
+<!--       <dependency> -->
+<!--         <groupId>info.magnolia.ui</groupId> -->
+<!--         <artifactId>magnolia-ui-project</artifactId> -->
+<!--         <version>${magnoliaVersion}</version> -->
+<!--         <type>pom</type> -->
+<!--         <scope>import</scope> -->
+<!--       </dependency> -->
 
       <!-- Importing dependencyManagement of CE bundle. This means you don't have to specify versions of modules you depend on (unless you want a different version than that of the bundle). -->
       <dependency>
@@ -133,5 +133,6 @@
     <module>demoUno-webapp</module>
     <module>myTemplateModule</module>
     <module>myTheme</module>
+<!--     <module>magnolia-app-tutorial</module> -->
   </modules>
 </project>
