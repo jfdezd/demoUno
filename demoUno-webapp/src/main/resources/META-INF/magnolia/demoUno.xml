@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module>
+  <name>demoUno</name>
+  <displayName>${project.name}</displayName>
+  <description>${project.description}</description>
+  <versionHandler>local.dev.proj.setup.ExampleProjectModuleVersionHandler</versionHandler>
+  <version>${project.version}</version>
+ 
+<!--   <dependencies> -->
+<!--     <dependency> -->
+<!--       <name>fs-browser-app</name> -->
+<!--       <version>1.1-SNAPSHOT</version> -->
+<!--     </dependency> -->
+<!--   </dependencies> -->
+ 
+</module>
