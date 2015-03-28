@@ -2,9 +2,7 @@ package local.dev.proj.setup;
 
 import info.magnolia.module.DefaultModuleVersionHandler;
 import info.magnolia.module.InstallContext;
-import info.magnolia.module.delta.SetPropertyTask;
 import info.magnolia.module.delta.Task;
-import info.magnolia.repository.RepositoryConstants;
 
 import java.util.ArrayList;
 import java.util.List;

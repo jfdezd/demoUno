@@ -10,6 +10,12 @@
         <dependent-module archiveName="myTheme-1.0-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/myTheme/myTheme">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="magnolia-app-tutorial-1.3.3-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/magnolia-app-tutorial/magnolia-app-tutorial">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="fs-browser-app-1.0.2-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/fs-browser-app/fs-browser-app">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module deploy-path="/" handle="module:/overlay/var/M2_REPO/info/magnolia/magnolia-empty-webapp/5.3.6/magnolia-empty-webapp-5.3.6.war?unpackFolder=target/m2e-wtp/overlays&amp;includes=**/**&amp;excludes=WEB-INF/lib/*.jar">
             <dependency-type>consumes</dependency-type>
         </dependent-module>

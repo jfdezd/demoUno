@@ -6,7 +6,6 @@
     <groupId>local.dev.proj</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
-  <groupId>local.dev.proj</groupId>
   <artifactId>myTemplateModule</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -15,20 +14,18 @@
   <description>Please uncomment and fill in ...</description>
   -->
   <properties>
-    <magnoliaVersion>5.3</magnoliaVersion>
-    <javaVersion>1.6</javaVersion>
+    <magnoliaVersion>5.3.6</magnoliaVersion>
+    <javaVersion>1.7</javaVersion>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>info.magnolia</groupId>
       <artifactId>magnolia-core</artifactId>
-      <version>${magnoliaVersion}</version>
-    </dependency>
+      </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>
       <artifactId>servlet-api</artifactId>
-      <version>2.5</version>
       <scope>provided</scope>
     </dependency>
 
@@ -36,7 +33,6 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.11</version>
       <scope>test</scope>
     </dependency>
   </dependencies>

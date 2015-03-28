@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>fs-browser-app</name>
+  <displayName>${project.name}</displayName>
+  <description>${project.description}</description>
+  <class>info.magnolia.filesystembrowser.FileSystemBrowserAppModule</class>
+  <versionHandler>info.magnolia.filesystembrowser.setup.FileSystemBrowserAppModuleVersionHandler</versionHandler>
+  <version>${project.version}</version>
+
+  <components>
+    <id>app-fs-browser-imageeditor</id>
+    <component>
+      <type>info.magnolia.filesystembrowser.app.subapp.imageeditor.view.ImageEditorSubAppView</type>
+      <implementation>info.magnolia.filesystembrowser.app.subapp.imageeditor.view.ImageEditorSubAppViewImpl</implementation>
+    </component>
+  </components>
+
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>5.3/*</version>
+    </dependency>
+    <dependency>
+      <name>ui-admincentral</name>
+      <version>5.3/*</version>
+    </dependency>
+  </dependencies>
+</module>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>local.dev.proj</groupId>
+    <artifactId>demoUno</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+  <artifactId>magnolia-app-tutorial</artifactId>
+  <version>1.3.3-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>magnolia-app-tutorial</name>
+  <description>Example for My first content app tutorial</description>
+  <properties>
+    <magnoliaLicenseStyle>mit</magnoliaLicenseStyle>
+    <magnoliaVersion>5.3.6</magnoliaVersion>
+    <magnoliaUiVersion>5.3.6</magnoliaUiVersion>
+    <javaVersion>1.7</javaVersion>
+  </properties>
+  <!-- <scm>
+    <connection>scm:git:http://git.magnolia-cms.com/documentation/app-tutorial</connection>
+    <developerConnection>scm:git:https://git.magnolia-cms.com/documentation/app-tutorial</developerConnection>
+    <url>http://git.magnolia-cms.com/gitweb/?p=documentation/app-tutorial.git</url>
+    <tag>HEAD</tag>
+  </scm> -->
+
+  <dependencies>
+    <dependency>
+      <groupId>info.magnolia</groupId>
+      <artifactId>magnolia-core</artifactId>
+      <version>${magnoliaVersion}</version><!--$NO-MVN-MAN-VER$-->
+    </dependency>
+    <dependency>
+      <groupId>info.magnolia.ui</groupId>
+      <artifactId>magnolia-ui-admincentral</artifactId>
+      </dependency>
+    <dependency>
+      <groupId>info.magnolia.ui</groupId>
+      <artifactId>magnolia-ui-contentapp</artifactId>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <repositories>
+    <repository>
+      <id>magnolia.public</id>
+      <url>https://nexus.magnolia-cms.com/content/groups/public</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>vaadin-addons</id>
+      <url>https://maven.vaadin.com/vaadin-addons</url>
+    </repository>
+  </repositories>
+
+</project>

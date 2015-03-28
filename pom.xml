@@ -137,6 +137,7 @@
     <module>demoUno-webapp</module>
     <module>myTemplateModule</module>
     <module>myTheme</module>
-<!--     <module>magnolia-app-tutorial</module> -->
+    <module>app-tutorial</module>
+    <module>fs-browser-app</module>
   </modules>
 </project>

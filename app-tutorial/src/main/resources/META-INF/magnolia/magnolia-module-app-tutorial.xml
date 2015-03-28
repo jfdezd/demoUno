@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module SYSTEM "module.dtd" >
+<module>
+  <name>app-tutorial</name>
+  <displayName>App Tutorial</displayName>
+  <description>Example app for My first content app tutorial</description>
+  <version>${project.version}</version>
+
+  <dependencies>
+    <dependency>
+      <name>core</name>
+      <version>5.3.6/*</version>
+    </dependency>
+    <dependency>
+      <name>ui-admincentral</name>
+      <version>5.3.6/*</version>
+    </dependency>
+    <dependency>
+      <name>ui-contentapp</name>
+      <version>5.3.6/*</version>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+
+
+  <repositories>
+    <repository>
+      <name>magnolia</name>
+      <workspaces>
+        <workspace>products</workspace>
+      </workspaces>
+      <nodeTypeFile>/mgnl-nodetypes/app-tutorial-nodetypes.xml</nodeTypeFile>
+    </repository>
+  </repositories>
+
+</module>
